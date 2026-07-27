@@ -4,6 +4,7 @@ set -e
 CHAOTIC_AUR=(
     neovim
     pastel
+    glow
 )
 
 PARU=(
@@ -25,6 +26,12 @@ EXPORT_BINS=(
     /usr/bin/notify-send
     # Markdown preview (GitHub-Style)
     /usr/bin/grip
+    # Markdown preview (Terminal, offline)
+    /usr/bin/glow
+    # Universal document converter
+    /usr/bin/pandoc
+    # LaTeX (LuaTeX-Engine, von pandoc als PDF-Engine genutzt)
+    /usr/bin/lualatex
 )
 
 # Distrobox-pre-hook: wird von distrobox-enter erstellt, fehlt bei NixOS 1.8.0
